@@ -1,0 +1,9 @@
+D:\GitHub\AuthLoad\AuthLoad\bin\Debug\AuthLoad.exe.config
+D:\GitHub\AuthLoad\AuthLoad\bin\Debug\AuthLoad.exe
+D:\GitHub\AuthLoad\AuthLoad\bin\Debug\AuthLoad.pdb
+D:\GitHub\AuthLoad\AuthLoad\obj\Debug\AuthLoad.csproj.AssemblyReference.cache
+D:\GitHub\AuthLoad\AuthLoad\obj\Debug\AuthLoad.Properties.Resources.resources
+D:\GitHub\AuthLoad\AuthLoad\obj\Debug\AuthLoad.csproj.GenerateResource.cache
+D:\GitHub\AuthLoad\AuthLoad\obj\Debug\AuthLoad.csproj.CoreCompileInputs.cache
+D:\GitHub\AuthLoad\AuthLoad\obj\Debug\AuthLoad.exe
+D:\GitHub\AuthLoad\AuthLoad\obj\Debug\AuthLoad.pdb
