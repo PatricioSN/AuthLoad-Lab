@@ -8,7 +8,7 @@ from cracker import rodar_brute_force
 rarfile.UNRAR_TOOL = r'C:\Program Files\WinRAR\UnRAR.exe'
 
 def main():
-    # argparse permite passar argumentos direto na linha de comando
+    # Argparse permite criar nossos argumentos
     # ex: python main.py target.rar --max 4
     parser = argparse.ArgumentParser(description="Brute force simples para arquivos RAR")
     parser.add_argument("arquivo", help="Caminho do arquivo .rar")
