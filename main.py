@@ -13,6 +13,10 @@ def main():
     parser = argparse.ArgumentParser(description="Brute force simples para arquivos RAR")
     parser.add_argument("arquivo", help="Caminho do arquivo .rar")
     parser.add_argument("--max", type=int, default=4, help="Comprimento máximo da senha (padrão: 4)")
+    parser.add_argument("-l", action="store_true", help="Letras minúsculas (a-z)")
+    parser.add_argument("-L", action="store_true", help="Letras maiúsculas (A-Z)")
+    parser.add_argument("-n", action="store_true", help="Números (0-9)")
+    parser.add_argument("-e", action="store_true", help="Caracteres especiais")
     args = parser.parse_args()
 
     caminho = Path(args.arquivo)
@@ -28,10 +32,13 @@ def main():
     print(f"Comprimento máximo: {args.max}")
     print("Iniciando...\n")
 
-    # Aqui está a separação limpa:
-    # main não sabe como gerar senhas, só pede ao charset
-    # main não sabe como testar senhas, só pede ao cracker
-    gerador = gerar_senhas(args.max)
+    gerador = gerar_senhas(
+        args.max,
+        letras_min=args.l,
+        letras_mai=args.L,
+        numeros=args.n,
+        especiais=args.e
+    )
     rodar_brute_force(str(caminho), gerador)
 
 if __name__ == "__main__":

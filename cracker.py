@@ -1,4 +1,3 @@
-# cracker.py
 import subprocess
 import time
 from multiprocessing import Pool, cpu_count
